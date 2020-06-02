@@ -79,9 +79,23 @@ body {
     height: 20rem;
 }
 
+@media only screen and (max-width: 600px) {
+    .title {
+        width: 20rem;
+        height: 10rem;
+    }
+}
+
 .hangman-image {
     height: 40rem;
     width: 40rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .hangman-image {
+        height: 25rem;
+        width: 25rem;
+    }
 }
 
 .word-container {
@@ -111,7 +125,7 @@ body {
         margin-top: 2rem;
         margin-right: 0;
         padding: 0 2rem;
-        width: 100%;
+        width: 90%;
     }
 }
 
