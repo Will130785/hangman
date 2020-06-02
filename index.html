@@ -7,6 +7,42 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+
+    <!-- Main Game Container -->
+    <div class="game-container">
+        <!-- Game Title -->
+        <div class="heading">
+            <img class="title" src="img/title.png">
+        </div>
+
+        <!-- Container for the hangman picture -->
+        <div class="hangman-container">
+            <!-- Always start with the first image -->
+            <img class="hangman-image" src="img/hangman1.png">
+        </div>
+
+        <div class="word-container">
+            <!-- this will be where the letter place holder images will be appended via javascript-->
+        </div>
+    </div> 
+
+    <!-- Game console container -->
+    <div class="console">
+        <div class="inputs">
+            <input class="inpt word-input" placeholder="Enter word">
+            <input class="inpt letter-input" maxlength="1" placeholder="Enter letter">
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-start">Start</button>
+            <button class="btn btn-guess">Guess</button>
+            <button class="btn btn-reset">Reset</button>
+        </div>
+
+        <div class="game-messages">
+            <!-- This is where the corresponding game messages will be appended via javascript-->
+        </div>
+    </div>
     
     <script src="app.js"></script>
 </body>

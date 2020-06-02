@@ -1,3 +1,6 @@
+/*IMPORTED FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
 /*GLOBAL RESET*/
 * {
     padding: 0;
@@ -7,4 +10,173 @@
 
 html {
     font-size: 62.5%; /* 1rem = 10px */
+}
+
+/* ALTER ROOT FONT AT DIFFERENT SCREEN SIZES */
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+body {
+    display: flex;
+    background-color: #fdfdfd;
+    align-items: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/*ALTER FLEX DIRECTION */
+@media only screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*MAIN GAME CONTAINER */
+.game-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    width: 40rem;
+    height: 20rem;
+}
+
+.hangman-image {
+    height: 40rem;
+    width: 40rem;
+}
+
+.word-container {
+    margin-top: 5rem;
+    font-size: 4rem;
+    letter-spacing: .8rem;
+}
+
+.word-placeholder {
+    height: 2rem;
+    width: 3.2rem;
+    margin: 0;
+}
+
+/*GAME PLAY CONSOLE */
+.console {
+    width: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr) 40rem;
+    margin-right: 20rem;
+}
+
+/*CHANGE MARGIN AT DIFFERENT SCREEN SIZES BUT KEEP THE PENCIL AND PAPER SKETCH LOOK*/
+@media only screen and (max-width: 800px) {
+    .console {
+        margin-right: 8rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .console {
+        margin-right: 15rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .console {
+        margin-right: 20rem;
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .console {
+        margin-right: 22rem;
+        margin-top: 2rem;
+    }
+}
+
+/* BUTTONS AND INPUTS */
+.letter-input {
+    display: none;
+}
+
+.inputs {
+    width: 100%;
+}
+
+.inpt {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.btn-reset {
+    display: none;
+}
+
+.btn-guess {
+    display: none;
+}
+
+.buttons {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #ca3524;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* CONSOLE MESSAGE DISPLAY */
+.console-messages {
+        grid-row: 4 / 5;
+        margin-top: 5rem;
+        width: 40rem;
+        height: 20rem;
 }
