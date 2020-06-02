@@ -108,12 +108,14 @@ body {
 /*CHANGE MARGIN AT DIFFERENT SCREEN SIZES BUT KEEP THE PENCIL AND PAPER SKETCH LOOK*/
 @media only screen and (max-width: 800px) {
     .console {
-        margin-right: 8rem;
         margin-top: 2rem;
+        margin-right: 0;
+        padding: 0 2rem;
+        width: 100%;
     }
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     .console {
         margin-right: 15rem;
         margin-top: 2rem;
@@ -132,7 +134,7 @@ body {
         margin-right: 22rem;
         margin-top: 2rem;
     }
-}
+} */
 
 /* BUTTONS AND INPUTS */
 .letter-input {
@@ -147,6 +149,12 @@ body {
     width: 100%;
     padding: 1rem;
     font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .inpt {
+        font-size: 16px;
+    }
 }
 
 .btn-reset {
@@ -171,6 +179,12 @@ body {
     border-radius: 1rem;
     color: #fff;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .btn {
+        font-size: 16px;
+    }
 }
 
 /* CONSOLE MESSAGE DISPLAY */

@@ -94,7 +94,7 @@ function processGuess() {
     //Check status of game
     if(gameWord.length > 0 && gamestatus === 1) {
         //Capture guess letter, clear input, assign gameWordLenght variable in order to track the progress of the game and clear wordContainer
-        let guessLetter = elements.letterInput.value;
+        let guessLetter = elements.letterInput.value.toLowerCase();
         elements.letterInput.value = "";
         let gameWordLength = gameWord.length;
         elements.wordContainer.innerHTML = "";
@@ -143,7 +143,7 @@ function processGuess() {
             if(item.length > 1) {
                 //If the length of the item is larger than 1, the html for a match should be output
                 elements.wordContainer.insertAdjacentHTML("beforeend", item);
-                console.log(item);
+
             } else {
                 //if not then the image for the placeholder should be output
                 let html = `
